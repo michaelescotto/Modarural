@@ -36,20 +36,20 @@ const ItemCount = ({stock, onAdd}) => {
 
     return (
         <>
-            <div className="container">
+            <div className="container fs-1">
                 <div className="row">
                     <div className="col text-center">
-                        <div className="btn-group m-1" role="group" aria-label="Basic example">
-                            <button type="button" className="btn btn-primary" onClick={aumentar}>+</button>
-                            <button type="button" className="btn btn-primary">{contador}</button>
-                            <button type="button" className="btn btn-primary" onClick={reducir}>-</button>
+                        <div className="btn-group m-1 " role="group" aria-label="Basic example">
+                            <button type="button" className="btn btn-primary fs-3" onClick={aumentar}> + </button>
+                            <button type="button" className="btn btn-primary fs-3"> {contador} </button>
+                            <button type="button" className="btn btn-primary fs-3" onClick={reducir}> - </button>
                         </div>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col  text-center">
-                        {visible ? <button type="button" className="btn btn-primary" onClick={agregarCarrito} >Agregar producto</button> : 
-                        <Link to={"/cart"} className="btn btn-primary">Finalizar la compra</Link>}
+                    <div className="col  text-center ">
+                        {visible ? <button type="button" className="btn btn-primary fs-3 shadow-lg" onClick={agregarCarrito} >Agregar producto</button> : 
+                        <Link to={"/cart"} className="btn btn-primary fs-3 shadow-lg">Finalizar la compra</Link>}
                     </div>
                 </div>
             </div>

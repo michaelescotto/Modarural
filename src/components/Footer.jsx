@@ -3,7 +3,7 @@ const Footer = () => {
         <>
             <footer className="footer mt-auto py-2 bg-dark text-center text-white">
                 <div className="container">
-                    <div className="row">
+                    <div className="row pt-2">
                         <div className="col-md-4">
                             <h3>Contacto</h3>
                             <p>Email: mundorural@shop.com</p>
