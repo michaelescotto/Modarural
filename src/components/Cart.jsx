@@ -24,27 +24,29 @@ const Cart = () => {
         <div className="container fs-3 text-center">
             <div className="row">
                 <div className="col">
-                    <table className="table">
-                        <tbody>
-                            {cart.map(item => (
-                                <tr key={item.id}>
-                                    <td><img src={item.imagen} alt={item.nombre} width={250} /></td>
-                                    <td>{item.nombre}</td>
-                                    <td>${item.precio}</td>
-                                    <td>x {item.cantidad}</td>
-                                    <td>${item.precio * item.cantidad}</td>
-                                    <td><button className="btn btn-danger fs-4" onClick={() => removeProducto(item.id)}>Quitar</button></td>
-                                </tr>
-                            ))}
+                    <div className="table-responsive">
+                        <table className="table">
+                            <tbody>
+                                {cart.map(item => (
+                                    <tr key={item.id}>
+                                        <td><img src={item.imagen} alt={item.nombre} width={250} /></td>
+                                        <td>{item.nombre}</td>
+                                        <td>${item.precio}</td>
+                                        <td>x {item.cantidad}</td>
+                                        <td>${item.precio * item.cantidad}</td>
+                                        <td><button className="btn btn-danger fs-4" onClick={() => removeProducto(item.id)}>Quitar</button></td>
+                                    </tr>
+                                ))}
 
-                            <tr>
-                                <td colSpan={3}>Total</td>
-                                <td>${sumaTotalProductos()}</td>
-                                <td><Link to={"/checkout"} className="btn btn-success fs-4 px-5">Checkout</Link></td>
-                                <td><button className="btn btn-warning fs-4 px-3" onClick={limpiador}>Limpiar</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                <tr>
+                                    <td colSpan={3}>Total</td>
+                                    <td>${sumaTotalProductos()}</td>
+                                    <td><Link to={"/checkout"} className="btn btn-success fs-4 px-5">Checkout</Link></td>
+                                    <td><button className="btn btn-warning fs-4 px-3" onClick={limpiador}>Limpiar</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
