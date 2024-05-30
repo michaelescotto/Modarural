@@ -1,6 +1,6 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useState } from "react"
 import { CartContext } from "./context/CartContext";
-import { addDoc, collection, getDocs, getFirestore } from "firebase/firestore";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { Link } from "react-router-dom";
 
 const Checkout = () => {
@@ -9,8 +9,6 @@ const Checkout = () => {
     const [telefono, setTelefono] = useState("")
     const [orderId, setOrderId] = useState("")
     const {cart, sumaTotalProductos, cantidadProductos, limpiador} = useContext(CartContext)
-
-
 
     const realizarPedido = () => {
 
@@ -35,7 +33,6 @@ const Checkout = () => {
         })
     }
 
-
     if (cantidadProductos() == 0 && !orderId){
         return(
             <div className="container">
@@ -50,7 +47,6 @@ const Checkout = () => {
             </div>
         )
     }
-
 
     return (
         <div className="container">
@@ -92,7 +88,6 @@ const Checkout = () => {
                     </table>
                 </div>
             </div> : ""}
-
 
             <div className="row">
                 <div className="col">

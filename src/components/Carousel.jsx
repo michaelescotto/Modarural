@@ -10,16 +10,16 @@ const Carousel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="../../public/diapo0.png" className="d-block w-100" alt="..." />
+                    <img src="/public/diapo0.png" className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
-                    <img src="../../public/diapo1.png" className="d-block w-100" alt="..." />
+                    <img src="/public/diapo1.png" className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
-                    <img src="../../public/diapo2.png" className="d-block w-100" alt="..." />
+                    <img src="/public/diapo2.png" className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
-                    <img src="../../public/diapo3.png" className="d-block w-100" alt="..." />
+                    <img src="/public/diapo3.png" className="d-block w-100" alt="..." />
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -31,8 +31,6 @@ const Carousel = () => {
                 <span className="visually-hidden">Siguiente</span>
             </button>
         </div>
-
-
     )
 }
 

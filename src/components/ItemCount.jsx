@@ -30,7 +30,6 @@ const ItemCount = ({stock, onAdd}) => {
         }
     }
 
-
     useEffect(() => {
         setStockProductos(stock);
     }, [stock])

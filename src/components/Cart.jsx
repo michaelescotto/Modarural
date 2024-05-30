@@ -3,7 +3,7 @@ import { CartContext } from "./context/CartContext"
 import { Link } from "react-router-dom"
 
 const Cart = () => {
-    const { cart, removeProducto, limpiador, sumaTotalProductos, cantidadProductos } = useContext(CartContext)
+    const { cart, removeProducto, limpiador, sumaTotalProductos, } = useContext(CartContext)
 
     if (sumaTotalProductos() == 0) {
         return (

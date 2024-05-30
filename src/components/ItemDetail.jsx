@@ -9,7 +9,6 @@ const ItemDetail = ({item}) => {
         addProducto(item, cantidad);
     }
 
-
     return(
         <>
             <div className="container">
