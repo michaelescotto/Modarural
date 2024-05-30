@@ -35,12 +35,12 @@ const Checkout = () => {
 
     if (cantidadProductos() == 0 && !orderId){
         return(
-            <div className="container">
+            <div className="container fs-2 text-center">
                 <div className="row">
                     <div className="col">
-                        <div className="alert alert-primary" role="alert">
+                        <div className="alert alert-primary p-5 m-5" role="alert">
                             <h2>No hay productos agregados en el carrito</h2>
-                            <Link to={"/"} className="btn btn-primary"> Ir al inicio </Link>
+                            <Link to={"/"} className="btn btn-primary p-2 m-2 fs-2"> Ir al inicio </Link>
                         </div>
                     </div>
                 </div>
@@ -49,10 +49,10 @@ const Checkout = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container fs-3 py-5">
             {!orderId ?
             <div className="row">
-                <div className="col">
+                <div className="col col-md-4">
                     <form>
                         <div className="mb-3">
                             <label className="form-label">Nombre</label>
@@ -66,10 +66,10 @@ const Checkout = () => {
                             <label className="form-label">Teléfono</label>
                             <input type="text" className="form-control" onInput={(e) => { setTelefono(e.target.value) }} />
                         </div>
-                        <button type="button" className="btn btn-primary" onClick={realizarPedido}>Realizar pedido</button>
+                        <button type="button" className="btn btn-primary fs-3 p-1 mt-3" onClick={realizarPedido}>Realizar pedido</button>
                     </form>
                 </div>
-                <div className="col">
+                <div className="col col-md-8">
                     <table className="table">
                         <tbody>
                             {cart.map(item => (

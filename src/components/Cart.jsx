@@ -33,15 +33,15 @@ const Cart = () => {
                                     <td>${item.precio}</td>
                                     <td>x {item.cantidad}</td>
                                     <td>${item.precio * item.cantidad}</td>
-                                    <td><button className="btn btn-primary" onClick={() => removeProducto(item.id)}>Quitar</button></td>
+                                    <td><button className="btn btn-danger fs-4" onClick={() => removeProducto(item.id)}>Quitar</button></td>
                                 </tr>
                             ))}
 
                             <tr>
                                 <td colSpan={3}>Total</td>
                                 <td>${sumaTotalProductos()}</td>
-                                <td><Link to={"/checkout"} className="btn btn-primary">Checkout</Link></td>
-                                <td><button className="btn btn-primary" onClick={limpiador}>Vaciar el carrito</button></td>
+                                <td><Link to={"/checkout"} className="btn btn-success fs-4 px-5">Checkout</Link></td>
+                                <td><button className="btn btn-warning fs-4 px-3" onClick={limpiador}>Limpiar</button></td>
                             </tr>
                         </tbody>
                     </table>
