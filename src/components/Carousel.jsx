@@ -1,7 +1,7 @@
 const Carousel = () => {
     return (
 
-        <div id="carouselExampleIndicators" className="carousel slide">
+        <div id="carouselExampleIndicators" className="carousel slide pt-2 shadow-lg" data-bs-ride="carousel" data-bs-interval="3500" style={{ maxWidth: '800px', margin: '0 auto' }}>
             <div className="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -10,16 +10,16 @@ const Carousel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="/diapo0.png" className="d-block w-100" alt="..." />
+                    <img src="/diapo0.png" className="d-block w-100 border rounded " style={{ maxHeight: '250px', objectFit: 'cover' }} alt="..." />
                 </div>
                 <div className="carousel-item">
-                    <img src="/diapo1.png" className="d-block w-100" alt="..." />
+                    <img src="/diapo1.png" className="d-block w-100 border rounded" style={{ maxHeight: '250px', objectFit: 'cover' }} alt="..." />
                 </div>
                 <div className="carousel-item">
-                    <img src="/diapo2.png" className="d-block w-100" alt="..." />
+                    <img src="/diapo2.png" className="d-block w-100 border rounded" style={{ maxHeight: '250px', objectFit: 'cover' }} alt="..." />
                 </div>
                 <div className="carousel-item">
-                    <img src="/diapo3.png" className="d-block w-100" alt="..." />
+                    <img src="/diapo3.png" className="d-block w-100 border rounded" style={{ maxHeight: '250px', objectFit: 'cover' }} alt="..." />
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
